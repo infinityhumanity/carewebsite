@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — Infinity Home Care</title>
+  <meta name="description" content="Infinity Home Care is a provider of compassionate caretakers with a passion for serving the community and helping families access affordable in-home care." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/styles.css" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+
+  <!-- Canonical + social sharing -->
+  <link rel="canonical" href="https://infinityhumanity.com/about.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Infinity Home Care" />
+  <meta property="og:title" content="About — Infinity Home Care" />
+  <meta property="og:description" content="Infinity Home Care provides compassionate caretakers with a passion for serving the community and helping families access affordable in-home care." />
+  <meta property="og:url" content="https://infinityhumanity.com/about.html" />
+  <!-- TODO: add a real 1200x630 share image at assets/images/og-image.jpg -->
+  <meta property="og:image" content="https://infinityhumanity.com/assets/images/og-image.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="About — Infinity Home Care" />
+  <meta name="twitter:description" content="Caring is who we are. Learn about our mission to keep people happy and healthy at home." />
+  <meta name="twitter:image" content="https://infinityhumanity.com/assets/images/og-image.jpg" />
+</head>
+<body>
+
+  <!-- Skip link for keyboard / screen-reader users -->
+  <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[60] focus:rounded-md focus:bg-primary-darker focus:px-4 focus:py-2 focus:text-white">Skip to main content</a>
+
+  <!-- ============ HEADER (shared across all pages) ============ -->
+  <header class="sticky top-0 z-50 border-b border-primary/10 bg-cream/90 backdrop-blur">
+    <div class="container-page flex h-20 items-center justify-between">
+      <a href="./index.html" class="flex items-center gap-2.5" aria-label="Infinity Home Care home">
+        <span class="flex h-11 w-11 items-center justify-center rounded-full bg-primary text-white shadow-soft">
+          <svg class="h-6 w-6" viewBox="0 0 48 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" aria-hidden="true">
+            <path d="M12 12c0-4 3-7 6-7s6 3 6 7-3 7-6 7-6-3-6-7zm12 0c0-4 3-7 6-7s6 3 6 7-3 7-6 7-6-3-6-7z"/>
+          </svg>
+        </span>
+        <span class="font-display text-lg font-700 leading-tight text-ink sm:text-xl">
+          Infinity <span class="text-primary">Home Care</span>
+        </span>
+      </a>
+
+      <nav class="hidden items-center gap-1 md:flex" aria-label="Primary">
+        <a href="./index.html" class="nav-link">Home</a>
+        <a href="./services.html" class="nav-link">Services</a>
+        <a href="./about.html" class="nav-link nav-link-active" aria-current="page">About</a>
+        <a href="./contact.html" class="nav-link">Contact</a>
+        <!-- TODO: replace phone number -->
+        <a href="tel:+10000000000" class="btn-coral ml-3">
+          <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Call Us
+        </a>
+      </nav>
+
+      <button id="nav-toggle" class="inline-flex items-center justify-center rounded-md p-2 text-ink md:hidden" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg class="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+
+    <nav id="mobile-menu" class="hidden border-t border-primary/10 bg-cream md:hidden" aria-label="Mobile">
+      <div class="container-page flex flex-col gap-1 py-4">
+        <a href="./index.html" class="nav-link">Home</a>
+        <a href="./services.html" class="nav-link">Services</a>
+        <a href="./about.html" class="nav-link nav-link-active" aria-current="page">About</a>
+        <a href="./contact.html" class="nav-link">Contact</a>
+        <a href="tel:+10000000000" class="btn-coral mt-2 w-full">Call Us</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- ============ PAGE BANNER ============ -->
+    <section class="bg-gradient-to-br from-cream via-cream to-primary-light/25">
+      <div class="container-page py-16 text-center lg:py-20">
+        <span class="eyebrow">About us</span>
+        <h1 class="mt-3 font-display text-4xl font-700 text-ink sm:text-5xl">Caring is who we are</h1>
+        <p class="mx-auto mt-5 max-w-2xl text-lg text-ink-muted">
+          Infinity Home Care was founded on a simple belief: everyone deserves to grow older
+          with dignity, comfort and company — right where they feel most at home.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ MISSION ============ -->
+    <section class="section">
+      <div class="container-page grid gap-12 lg:grid-cols-2 lg:items-center">
+        <div>
+          <span class="eyebrow">Our mission</span>
+          <h2 class="mt-3 text-3xl font-700 text-ink sm:text-4xl">A passion for serving our community</h2>
+          <p class="mt-5 text-lg leading-relaxed text-ink-muted">
+            Infinity Home Care is a provider of compassionate caretakers. Caring for our
+            neighbors and doing meaningful social work for the community has always been our
+            passion — it's the reason we exist.
+          </p>
+          <p class="mt-4 text-lg leading-relaxed text-ink-muted">
+            We pair every family with caregivers who are not only skilled, but genuinely kind —
+            people who show up, listen, and treat your loved ones the way they'd treat their own.
+          </p>
+        </div>
+        <div class="aspect-[4/3] w-full rounded-xl2 bg-gradient-to-br from-primary/15 to-coral/20 shadow-soft ring-1 ring-primary/10 flex items-center justify-center">
+          <svg class="h-24 w-24 text-primary/50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 1 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WHAT WE BELIEVE ============ -->
+    <section class="section bg-cream-deep">
+      <div class="container-page">
+        <div class="mx-auto max-w-2xl text-center">
+          <span class="eyebrow">What we believe</span>
+          <h2 class="mt-3 text-3xl font-700 text-ink sm:text-4xl">Care should be reachable for every family</h2>
+          <p class="mt-4 text-lg text-ink-muted">
+            We know quality care can feel out of reach. A big part of what we do is helping
+            families understand the financial-assistance options available to them.
+          </p>
+        </div>
+        <div class="mt-12 grid gap-6 sm:grid-cols-3">
+          <div class="card">
+            <span class="flex h-12 w-12 items-center justify-center rounded-xl2 bg-primary/10 text-primary">
+              <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 1 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <h3 class="mt-5 text-lg font-600 text-ink">Compassion first</h3>
+            <p class="mt-2 text-sm text-ink-muted">We lead with empathy. Every plan starts by listening to what your family actually needs.</p>
+          </div>
+          <div class="card">
+            <span class="flex h-12 w-12 items-center justify-center rounded-xl2 bg-primary/10 text-primary">
+              <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <h3 class="mt-5 text-lg font-600 text-ink">Affordable access</h3>
+            <p class="mt-2 text-sm text-ink-muted">We help you navigate Medicaid and other programs that can make care affordable.</p>
+          </div>
+          <div class="card">
+            <span class="flex h-12 w-12 items-center justify-center rounded-xl2 bg-primary/10 text-primary">
+              <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <h3 class="mt-5 text-lg font-600 text-ink">Trust &amp; safety</h3>
+            <p class="mt-2 text-sm text-ink-muted">Screened, background-checked caregivers and regular quality check-ins give you peace of mind.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CLOSING TAGLINE ============ -->
+    <section class="section">
+      <div class="container-page">
+        <div class="rounded-xl2 bg-primary-dark px-8 py-16 text-center text-white shadow-soft sm:px-12">
+          <h2 class="font-display text-3xl font-700 sm:text-4xl">Happy and healthy at home</h2>
+          <p class="mx-auto mt-4 max-w-xl text-white/80">That's our promise, and it's at the heart of everything we do.</p>
+          <a href="./contact.html" class="btn mt-8 bg-white text-primary-dark hover:bg-cream">Get in touch</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER (shared across all pages) ============ -->
+  <footer class="border-t border-primary/10 bg-white">
+    <div class="container-page grid gap-10 py-14 sm:grid-cols-2 lg:grid-cols-4">
+      <div class="sm:col-span-2 lg:col-span-1">
+        <div class="flex items-center gap-2.5">
+          <span class="flex h-10 w-10 items-center justify-center rounded-full bg-primary text-white">
+            <svg class="h-5 w-5" viewBox="0 0 48 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" aria-hidden="true"><path d="M12 12c0-4 3-7 6-7s6 3 6 7-3 7-6 7-6-3-6-7zm12 0c0-4 3-7 6-7s6 3 6 7-3 7-6 7-6-3-6-7z"/></svg>
+          </span>
+          <span class="font-display text-lg font-700 text-ink">Infinity <span class="text-primary">Home Care</span></span>
+        </div>
+        <p class="mt-4 max-w-xs text-sm leading-relaxed text-ink-muted">Compassionate, non-medical in-home care that helps you stay happy and healthy at home.</p>
+      </div>
+
+      <div>
+        <h3 class="text-sm font-700 uppercase tracking-wider text-ink">Explore</h3>
+        <ul class="mt-4 space-y-2 text-sm text-ink-muted">
+          <li><a href="./index.html" class="footer-link">Home</a></li>
+          <li><a href="./services.html" class="footer-link">Services</a></li>
+          <li><a href="./about.html" class="footer-link">About</a></li>
+          <li><a href="./contact.html" class="footer-link">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-sm font-700 uppercase tracking-wider text-ink">Services</h3>
+        <ul class="mt-4 space-y-2 text-sm text-ink-muted">
+          <li><a href="./services.html#companion-care" class="footer-link">Companion Care</a></li>
+          <li><a href="./services.html#personal-care" class="footer-link">Personal Care</a></li>
+          <li><a href="./services.html#memory-care" class="footer-link">Memory Care</a></li>
+          <li><a href="./services.html#homemaking" class="footer-link">Homemaker Services</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-sm font-700 uppercase tracking-wider text-ink">Get in touch</h3>
+        <ul class="mt-4 space-y-2 text-sm text-ink-muted">
+          <li><a href="mailto:info@infinityhumanity.com" class="footer-link">info@infinityhumanity.com</a></li>
+          <!-- TODO: replace phone number -->
+          <li><a href="tel:+10000000000" class="footer-link">(000) 000-0000</a></li>
+          <!-- TODO: replace address -->
+          <li>123 Example Street,<br />Your City, ST 00000</li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-primary/10">
+      <div class="container-page flex flex-col items-center justify-between gap-2 py-6 text-xs text-ink-muted sm:flex-row">
+        <p>&copy; <span id="year">2026</span> Infinity Home Care. All rights reserved.</p>
+        <p>infinityhumanity.com</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./js/main.js"></script>
+</body>
+</html>

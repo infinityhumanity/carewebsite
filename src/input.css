@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-cream text-ink font-sans antialiased;
+  }
+  h1, h2, h3, h4 {
+    @apply font-display;
+  }
+
+  /* Respect users who prefer reduced motion (common in our older audience) */
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-6xl px-5 sm:px-6 lg:px-8;
+  }
+
+  /* Buttons — darkened fills for stronger text contrast */
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-semibold transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2;
+  }
+  .btn-primary {
+    @apply btn bg-primary-darker text-white shadow-soft hover:bg-primary-dark focus-visible:ring-primary;
+  }
+  .btn-coral {
+    @apply btn bg-coral-dark text-white hover:bg-coral-darker focus-visible:ring-coral;
+  }
+  .btn-outline {
+    @apply btn border-2 border-primary-dark text-primary-dark hover:bg-primary-dark hover:text-white focus-visible:ring-primary;
+  }
+
+  /* Nav links — AA-contrast colors, larger tap target, visible focus */
+  .nav-link {
+    @apply relative inline-flex min-h-[44px] items-center rounded-md px-3 py-2 text-sm font-medium text-ink-muted transition-colors hover:text-primary-dark focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2;
+  }
+  .nav-link-active {
+    @apply font-semibold text-primary-dark;
+  }
+  /* Non-color cue for the current page */
+  .nav-link-active::after {
+    content: "";
+    @apply absolute inset-x-3 -bottom-0.5 h-0.5 rounded-full bg-primary-dark;
+  }
+
+  /* Cards */
+  .card {
+    @apply rounded-xl2 bg-white p-7 shadow-card transition-transform duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2;
+  }
+
+  /* Warm, accessible CTA band (dark text on a soft warm gradient) */
+  .band-warm {
+    @apply bg-gradient-to-br from-coral/20 via-cream to-primary/10;
+  }
+
+  /* Section helpers */
+  .section {
+    @apply py-16 sm:py-20 lg:py-24;
+  }
+  .eyebrow {
+    @apply inline-block text-sm font-semibold uppercase tracking-wider text-primary-darker;
+  }
+
+  /* Footer links — AA contrast + comfortable tap spacing */
+  .footer-link {
+    @apply inline-block py-1 hover:text-primary-dark focus-visible:outline-none focus-visible:underline;
+  }
+}

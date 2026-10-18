@@ -1,0 +1,14 @@
+{
+  "name": "infinity-home-care",
+  "version": "1.0.0",
+  "description": "Marketing website for Infinity Home Care (infinityhumanity.com)",
+  "private": true,
+  "scripts": {
+    "build:css": "tailwindcss -i ./src/input.css -o ./css/styles.css --minify",
+    "watch:css": "tailwindcss -i ./src/input.css -o ./css/styles.css --watch",
+    "serve": "python3 -m http.server 8000"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.0"
+  }
+}

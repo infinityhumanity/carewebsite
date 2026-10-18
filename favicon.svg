@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Infinity Home Care">
+  <rect width="64" height="64" rx="14" fill="#0f766e"/>
+  <g fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round">
+    <path d="M18 32c0-6 4-10 8-10s8 4 8 10-4 10-8 10-8-4-8-10zm16 0c0-6 4-10 8-10s8 4 8 10-4 10-8 10-8-4-8-10z"/>
+  </g>
+</svg>
